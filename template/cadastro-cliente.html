@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de Clientes</h1>
+
+      <label>Nome</label>
+      <input type="text" id="nome" />
+
+      <label>Telefone</label>
+      <input type="text" id="telefone" />
+
+      <label>E-mail</label>
+      <input type="email" id="email" />
+
+      <button onclick="cadastrarCliente()">Cadastrar</button>
+
+      <hr />
+
+      <table id="tabela_clientes">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="clientes.js"></script>
+  </body>
+</html>
