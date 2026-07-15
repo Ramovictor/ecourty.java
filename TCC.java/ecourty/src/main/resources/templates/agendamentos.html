@@ -1,0 +1,66 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+  crossorigin="anonymous"
+/>
+<div class="container mt-4">
+  <h1 class="mb-4">Agendamento de Quadras</h1>
+
+  <div class="row g-3">
+    <div class="col-md-4">
+      <label class="form-label">Data Início</label>
+      <input type="datetime-local" class="form-control" id="dataInicio" />
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label">Data Final</label>
+      <input type="datetime-local" class="form-control" id="dataFinal" />
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label">Cliente</label>
+      <select class="form-select" id="cliente"></select>
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label">Quadra</label>
+      <select class="form-select" id="quadra"></select>
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label">Valor</label>
+      <input type="number" class="form-control" id="valor" />
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label">Status do Pagamento</label>
+      <select class="form-select" id="status">
+        <option>Pendente</option>
+        <option>Pago</option>
+      </select>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary" onclick="cadastrarAgendamento()">
+        Agendar
+      </button>
+    </div>
+  </div>
+
+  <hr />
+
+  <table class="table table-striped" id="tabela_agendamentos">
+    <thead>
+      <tr>
+        <th>Data Início</th>
+        <th>Data Final</th>
+        <th>Cliente</th>
+        <th>Quadra</th>
+        <th>Valor</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>

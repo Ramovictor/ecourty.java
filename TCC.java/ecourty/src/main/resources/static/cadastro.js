@@ -1,3 +1,5 @@
+// cadastro.js
+
 function cadastrarCliente() {
   const inputNome = document.querySelector("#nome");
   const inputTelefone = document.querySelector("#telefone");
